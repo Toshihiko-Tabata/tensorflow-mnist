@@ -96,11 +96,6 @@ class Main {
                                 max = value;
                                 max_index = j;
                             }
-                            // var digits = String(value).length;
-                            // for (var k = 0; k < 3 - digits; k++) {
-                                // value = '0' + value;
-                            // }
-                            // var text = '0.' + value;
                             var text = value + '%';
                             if (value > 999) {
                                 text = '100%';
