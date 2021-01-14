@@ -91,18 +91,19 @@ class Main {
                         var max = 0;
                         var max_index = 0;
                         for (let j = 0; j < 10; j++) {
-                            var value = Math.round(data.results[i][j] * 1000);
+                            var value = Math.round(data.results[i][j] * 1000) / 10;
                             if (value > max) {
                                 max = value;
                                 max_index = j;
                             }
-                            var digits = String(value).length;
-                            for (var k = 0; k < 3 - digits; k++) {
-                                value = '0' + value;
-                            }
-                            var text = '0.' + value;
+                            // var digits = String(value).length;
+                            // for (var k = 0; k < 3 - digits; k++) {
+                                // value = '0' + value;
+                            // }
+                            // var text = '0.' + value;
+                            var text = value + '%';
                             if (value > 999) {
-                                text = '1.000';
+                                text = '100%';
                             }
                             $('#output tr').eq(j + 1).find('td').eq(i).text(text);
                         }
