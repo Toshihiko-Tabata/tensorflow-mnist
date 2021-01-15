@@ -13,9 +13,9 @@ class Main {
     }
     initialize() {
         this.ctx.fillStyle = '#FFFFFF';
-        // this.ctx.fillRect(0, 0, 449, 449);
-        // this.ctx.lineWidth = 1;
-        // this.ctx.strokeRect(0, 0, 449, 449);
+        this.ctx.fillRect(0, 0, 449, 449);
+        this.ctx.lineWidth = 1;
+        this.ctx.strokeRect(0, 0, 449, 449);
         // this.ctx.lineWidth = 0.05;
         // for (var i = 0; i < 27; i++) {
         //     this.ctx.beginPath();
