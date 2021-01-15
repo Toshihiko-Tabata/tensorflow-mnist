@@ -13,23 +13,23 @@ class Main {
     }
     initialize() {
         this.ctx.fillStyle = '#FFFFFF';
-        this.ctx.fillRect(0, 0, 449, 449);
-        this.ctx.lineWidth = 1;
-        this.ctx.strokeRect(0, 0, 449, 449);
-        this.ctx.lineWidth = 0.05;
-        for (var i = 0; i < 27; i++) {
-            this.ctx.beginPath();
-            this.ctx.moveTo((i + 1) * 16,   0);
-            this.ctx.lineTo((i + 1) * 16, 449);
-            this.ctx.closePath();
-            this.ctx.stroke();
+        // this.ctx.fillRect(0, 0, 449, 449);
+        // this.ctx.lineWidth = 1;
+        // this.ctx.strokeRect(0, 0, 449, 449);
+        // this.ctx.lineWidth = 0.05;
+        // for (var i = 0; i < 27; i++) {
+        //     this.ctx.beginPath();
+        //     this.ctx.moveTo((i + 1) * 16,   0);
+        //     this.ctx.lineTo((i + 1) * 16, 449);
+        //     this.ctx.closePath();
+        //     this.ctx.stroke();
 
-            this.ctx.beginPath();
-            this.ctx.moveTo(  0, (i + 1) * 16);
-            this.ctx.lineTo(449, (i + 1) * 16);
-            this.ctx.closePath();
-            this.ctx.stroke();
-        }
+        //     this.ctx.beginPath();
+        //     this.ctx.moveTo(  0, (i + 1) * 16);
+        //     this.ctx.lineTo(449, (i + 1) * 16);
+        //     this.ctx.closePath();
+        //     this.ctx.stroke();
+        // }
         this.drawInput();
         $('#output td').text('').removeClass('success');
     }
